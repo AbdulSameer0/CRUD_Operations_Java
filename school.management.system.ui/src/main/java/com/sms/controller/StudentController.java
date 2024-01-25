@@ -19,8 +19,7 @@ import com.sms.service.StudentService;
 public class StudentController {
     
      @Autowired
-     StudentService service;
-     
+        private StudentService service;
         @GetMapping("/")
         public String viewHomePage(Model model) {
             List<Student> liststudent = service.listAll();

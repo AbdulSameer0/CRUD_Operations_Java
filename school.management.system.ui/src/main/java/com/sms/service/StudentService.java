@@ -12,7 +12,7 @@ import com.sms.repository.StudentRepository;
 public class StudentService {
     
     @Autowired
-    StudentRepository repo;
+    private StudentRepository repo;
     
     public List<Student> listAll() {
         return (List<Student>) repo.findAll();
